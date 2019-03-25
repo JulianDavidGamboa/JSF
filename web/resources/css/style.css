@@ -1,0 +1,51 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: #505962;
+}
+
+.navbar {
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, .6)!important;
+  /* the rest of your styling */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #BDFF00;
+}
+
+/* Slider */
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 38%;
+    text-transform: uppercase;
+}
+
+
+.carousel-item {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: block;
+  transition: -webkit-transform 1.2s ease;
+  transition: transform 1.2s ease;
+  transition: transform 1.2s ease,-webkit-transform 1.2s ease;
+}
+
