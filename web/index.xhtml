@@ -3,11 +3,44 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <h:outputStylesheet library="css" name="style.css" />
+        
+        <link type="text/css" rel="stylesheet" href="resources/css/style.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
         <title>Crecimiento y Desarrollo de niños</title>
+        <style>
+            .navbar {
+                text-transform: uppercase;
+                letter-spacing: .1rem;
+                font-weight: bold;
+                background: rgba(0, 0, 0, .6)!important;
+            }
 
+            .navbar-dark .navbar-nav .nav-link {
+                color: white;
+                padding-top: .8rem;
+            }
+
+            .navbar-dark .navbar-nav .nav-link.active,
+            .navbar-dark .navbar-nav .nav-link:hover {
+                color: #BDFF00;
+            }
+            
+            .carousel-item {
+                background: no-repeat center center scroll;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+                display: block;
+                transition: -webkit-transform 1.2s ease;
+                transition: transform 1.2s ease;
+                transition: transform 1.2s ease,-webkit-transform 1.2s ease;
+            }
+        </style>
     </h:head>
     <h:body>
         
@@ -19,7 +52,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="">Inicio</a>
+                        <a class="nav-link" href="index.xhtml">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="formulario.xhtml">Formulario</a>

@@ -9,7 +9,6 @@ body {
     letter-spacing: .1rem;
     font-weight: bold;
     background: rgba(0, 0, 0, .6)!important;
-  /* the rest of your styling */
 }
 
 .navbar-dark .navbar-nav .nav-link {
